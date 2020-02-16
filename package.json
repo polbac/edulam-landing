@@ -1,0 +1,25 @@
+{
+    "name": "simple-gulp-bootstrap",
+    "version": "1.0.0",
+    "description": "Proyecto simple para empezar con Gulp + Bootstrap",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Mario González",
+    "license": "ISC",
+    "devDependencies": {
+        "@fortawesome/fontawesome-free": "^5.5.0",
+        "bootstrap": "^4.1.3",
+        "browser-sync": "^2.24.6",
+        "gulp": "^3.9.1",
+        "gulp-autoprefixer": "^6.0.0",
+        "gulp-concat": "^2.6.1",
+        "gulp-rename": "^1.4.0",
+        "gulp-sass": "^4.0.1",
+        "gulp-sourcemaps": "^2.6.4",
+        "gulp-uglify": "^3.0.1",
+        "jquery": "^3.3.1"
+    },
+    "dependencies": {}
+}
