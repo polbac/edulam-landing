@@ -4,8 +4,7 @@
     "description": "Proyecto simple para empezar con Gulp + Bootstrap",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "build": "ENV=build gulp",
+        "build-app": "ENV=build gulp",
         "dev": "ENV=dev gulp"
     },
     "author": "Mario González",
