@@ -82,11 +82,13 @@ gulp.task('dev:scripts', function (done) {
     done();
 });
 
-gulp.task('watch', ['dev:styles', 'dev:scripts', 'browserSync'], function () {
-    gulp.watch(dirs.devStyles.src + '/**/*.scss', ['dev:styles']);
-    gulp.watch(dirs.devScripts.src + '/**/*.js', ['dev:scripts']);
-});
+if (process.env.ENV === 'dev') {
+    gulp.task('watch', ['dev:styles', 'dev:scripts', 'browserSync'], function () {
+        gulp.watch(dirs.devStyles.src + '/**/*.scss', ['dev:styles']);
+        gulp.watch(dirs.devScripts.src + '/**/*.js', ['dev:scripts']);
+    });
+}
 
-gulp.task('default', ['watch'], function (done) {
+gulp.task('default', process.env.ENV === 'dev' ?  ['watch'] : null, function (done) {
     done();
 });

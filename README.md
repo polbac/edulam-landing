@@ -1,7 +1,4 @@
-# simple-gulp-bootstrap
-
-## Descripción 
-Proyecto simple para empezar con Gulp + Bootstrap. Watcher, compilado de SASS y refresco de navegador con BrowserSync.
+# edulam-landing
 
 ## Requerimientos
 Tener instalado globalmente el módulo `gulp-cli`. Si no, instalarlo:

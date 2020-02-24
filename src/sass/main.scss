@@ -1,0 +1,55 @@
+@import "custom-variables";
+
+html,body{
+    color: $text-color1;
+    margin: 0;
+    padding: 0;
+    background: $background-color;
+    font-family: "Montserrat";
+}
+
+header{
+    margin-top: 30px;
+    max-width: 1900px !important;
+    letter-spacing: 1px;
+
+    h1{
+        background: url(/images/logo.svg);
+        width: 156px;
+        height: 49px;
+        text-indent: -230px;
+        overflow: hidden;
+    }
+
+    nav{
+        margin-top: 15px;
+        a{
+            margin-right: 10px;
+            font-size: $text-size-menu;
+            font-weight: 600;
+        }
+    }
+    .session-bar{
+        font-size: $text-size-session;
+        font-weight: 600;
+        .register-text{
+            background: $color1;
+            color: $text-color2;
+            width: 175px;
+            display: inline-block;
+            margin-left: 15px;
+            height: 114px;
+            padding-top: 45px;
+            position: relative;
+            top: -30px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+    }
+}
+
+.big-container{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
