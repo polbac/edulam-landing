@@ -11,7 +11,7 @@ html,body{
     font-family: $text-font-1;
 }
 
-.button{
+.button,.button-small{
     display: inline-block;
     width: 175px;
     height: 77px;
@@ -23,6 +23,11 @@ html,body{
     text-align: center;
 }
 
+.button-small{
+    height: 37px;
+    line-height: 37px;
+}
+
 header{
     margin-top: 30px;
     max-width: 1900px !important;
@@ -32,9 +37,10 @@ header{
     top: 0;
 
     h1{
-        background: url(/images/logo.svg);
+        background: url(/images/branding.svg);
         width: 156px;
         height: 49px;
+        background-size: cover;
         text-indent: -230px;
         overflow: hidden;
     }
@@ -232,5 +238,28 @@ section{
                 max-width: 500px;
             }
         }
+    }
+}
+
+
+footer{
+    background: $color6;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    .footer-branding{
+        width: 100px;
+    }
+    .session-footer{
+        
+        .button-small{
+            margin-bottom: 10px;
+        }
+        .button-small-register{
+            background: $color2;
+        }
+    }
+
+    .footer-links{
+        margin-top: 97px;
     }
 }
