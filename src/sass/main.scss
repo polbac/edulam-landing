@@ -1,17 +1,35 @@
 @import "custom-variables";
+*{
+    box-sizing: border-box;
+}
 
 html,body{
     color: $text-color1;
     margin: 0;
     padding: 0;
     background: $background-color;
-    font-family: "Montserrat";
+    font-family: $text-font-1;
+}
+
+.button{
+    display: inline-block;
+    width: 175px;
+    height: 77px;
+    line-height: 77px;
+    color: $text-color2;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: $color1;
+    text-align: center;
 }
 
 header{
     margin-top: 30px;
     max-width: 1900px !important;
     letter-spacing: 1px;
+    position: fixed;
+    width: 100%;
+    top: 0;
 
     h1{
         background: url(/images/logo.svg);
@@ -45,6 +63,10 @@ header{
             border-bottom-left-radius: 20px;
             border-bottom-right-radius: 20px;
         }
+        .enter{
+            position: relative;
+            top: -30px;
+        }
     }
 }
 
@@ -53,3 +75,162 @@ header{
     margin-right: 20px;
 }
 
+h1{
+    font-family: $text-font-2;
+    font-weight: 900;
+    font-size: $text-size-title;
+}
+
+section{
+    min-height: 100vh;
+    &.hero{
+        padding-top: 100px;
+        h1{
+            color: $color1;
+        }
+        .main-image{
+            position: absolute;
+            bottom: 100px;
+            right: 100px;
+        }
+        .content-section{
+            margin-top: 100px;
+            max-width: 580px;
+            .push{
+                max-width: 400px;
+            }
+            .login-box{
+                margin-top: 40px;
+                color: $text-color3;
+                p{
+                    font-size: $text-size-menu;
+                }
+                a{
+                    display: inline-block;
+                    width: 175px;
+                    height: 77px;
+                    line-height: 77px;
+                    color: $text-color2;
+                    border-top-left-radius: 20px;
+                    border-bottom-right-radius: 20px;
+
+                    &.start-educator{
+                        background: $color1;
+                        margin-right: 20px;
+                    }
+                    &.start-student{
+                        background: $color2;
+                    }
+                }
+            }
+        }
+    }
+
+    &.skills{
+        min-height: auto;
+        background: $text-color2;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        article{
+            display: inline-block;
+            width: 30%;
+            h2{
+                color: $color1;
+                font-size: $text-size-subtitle;
+                font-weight: bold;
+                .icon{
+                    font-size: 60px;
+                    margin-bottom: 10px;
+                }
+            }
+            p{
+                max-width: 300px;
+                margin: auto;
+                margin-top: 30px;
+            }
+        }
+    }
+
+    &.features{
+        background: $color2;
+        color: $text-color2;
+        padding-top: 120px;
+        padding-bottom: 120px;
+        h2{
+            font-family: $text-font-2;
+            font-weight: 900;
+            font-size: $text-size-title;
+            margin-bottom: 50px;
+        }
+        .features-container{
+            position: relative;
+        }
+        article{
+            h3{
+                font-family: $text-font-2;
+                font-size: $text-size-subtitle-2;
+            }
+            p{
+                font-size: $text-size-text;
+            }
+            margin-bottom: 30px;
+            padding-left: 20px;
+            margin-bottom: 50px;
+        }
+        .line{
+            height: 200px;
+            width: 1px;
+            border-left: 2px solid $color4;
+            position: absolute;
+        }
+    }
+
+    &.educators{
+    
+        position: relative;
+        .main-image{
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        h2{
+            padding-top: 120px;
+            font-family: $text-font-2;
+            font-weight: 900;
+            font-size: $text-size-title;
+            margin-bottom: 50px;
+            color: $color1;
+        }
+        .container{
+            position: relative;
+            p{
+                max-width: 500px;
+            }
+        }
+        .button{
+            margin-top: 50px;
+        }
+    }
+
+    &.learn{
+        background: $color5;
+        h2{
+            padding-top: 120px;
+            font-family: $text-font-2;
+            font-weight: 900;
+            font-size: $text-size-title;
+            margin-bottom: 50px;
+            color: $color2;
+        }
+        .button{
+            background-color: $color2;
+            margin-top: 50px;
+        }
+        .container{
+            position: relative;
+            p{
+                max-width: 500px;
+            }
+        }
+    }
+}
