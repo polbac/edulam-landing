@@ -29,18 +29,19 @@ html,body{
 }
 
 header{
-    margin-top: 30px;
+    padding-top: 30px;
     max-width: 1900px !important;
     letter-spacing: 1px;
     position: fixed;
     width: 100%;
     top: 0;
+    z-index: 10;
 
     h1{
         background: url(/images/branding.svg);
-        width: 156px;
+        width: 152px;
         height: 49px;
-        background-size: cover;
+        background-size: contain;
         text-indent: -230px;
         overflow: hidden;
     }
@@ -74,6 +75,37 @@ header{
             top: -30px;
         }
     }
+    &.small{
+        padding-top: 10px;
+        h1{
+            width: 96px;
+            height: 31px;
+        }
+        background: rgb(255,255,255);
+        background: -moz-linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 50%);
+        background: -webkit-linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 50%);
+        background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 50%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+        height: 90px;
+        .session-bar{
+            font-size: $text-size-menu;
+        }
+        .register-text{
+            height: 74px;
+            padding-top: 35px;
+            
+        }
+        nav{
+            margin-top: 3px;
+            
+        }
+    }
+}
+.fixed-block.fixed{
+    position: fixed;
+    top: 120px;
+    left: 0;
+    z-index: 4;
 }
 
 .big-container{
@@ -180,7 +212,6 @@ section{
                 font-size: $text-size-text;
             }
             margin-bottom: 30px;
-            padding-left: 20px;
             margin-bottom: 50px;
         }
         .line{
@@ -192,8 +223,9 @@ section{
     }
 
     &.educators{
-    
+        z-index: 5;
         position: relative;
+        background: white;
         .main-image{
             position: absolute;
             top: 0;
@@ -219,6 +251,7 @@ section{
     }
 
     &.learn{
+        z-index: 5;
         background: $color5;
         h2{
             padding-top: 120px;
@@ -243,6 +276,8 @@ section{
 
 
 footer{
+    z-index: 5;
+    position: relative;
     background: $color6;
     padding-top: 50px;
     padding-bottom: 80px;
